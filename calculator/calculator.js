@@ -1,10 +1,8 @@
-
-const calculator = function() {
 function add(a, b) {
 	return a + b;
 
 	  }
-return(0,0)
+
 function subtract(a, b) {
 	return a-b
 }
@@ -18,19 +16,34 @@ return (acc, curval) => acc + curval;
 
 
 
-function multiply (a,b) {
-	return a*b
+function multiply (array) {
+    return array.length
+      ? array.reduce((accumulator, nextItem) => accumulator * nextItem)
+      : 0;
 }
 
-function power() {
+
+
+function power(a,b) {
+	return Math.pow(a,b);
 	
 }
 
-function factorial() {
+function factorial(a) {
 	
+	if (a==0 || a==1) {	
+		value = 1
+		return value
+	}
+	let array= [a]
+	while (a>=2) {
+		a=a-1
+		array.push(a)
+	}
+	
+	return array.reduce((accumulator,current) => accumulator * current);
 }
 
-}
 
 module.exports = {
 	add,

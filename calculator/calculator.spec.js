@@ -55,15 +55,15 @@ describe('power', function() {
 });
 
 describe('factorial', function() {
-	xit('computes the factorial of 0', function() {
+	it('computes the factorial of 0', function() {
 		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
-	xit('computes the factorial of 1', function() {
+	it('computes the factorial of 1', function() {
 		expect(calculator.factorial(1)).toEqual(1);
 	});
 
-	xit('computes the factorial of 2', function() {
+	it('computes the factorial of 2', function() {
 		expect(calculator.factorial(2)).toEqual(2);
 	});
 
