@@ -1,17 +1,25 @@
-function add () {
-	
+
+const calculator = function() {
+function add(a, b) {
+	return a + b;
+
+	  }
+return(0,0)
+function subtract(a, b) {
+	return a-b
 }
 
-function subtract () {
-	
-}
+
 
 function sum () {
-	
+return (acc, curval) => acc + curval;
+
 }
 
-function multiply () {
-	
+
+
+function multiply (a,b) {
+	return a*b
 }
 
 function power() {
@@ -20,6 +28,8 @@ function power() {
 
 function factorial() {
 	
+}
+
 }
 
 module.exports = {
